@@ -1,3 +1,4 @@
+#define ENET_DLL
 /** 
  @file  enet.h
  @brief ENet public header file

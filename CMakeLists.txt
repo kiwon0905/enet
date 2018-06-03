@@ -84,11 +84,11 @@ set(SOURCE_FILES
 source_group(include FILES ${INCLUDE_FILES})
 source_group(source FILES ${SOURCE_FILES})
 
-add_library(enet STATIC
+add_library(enet SHARED
     ${INCLUDE_FILES}
     ${SOURCE_FILES}
 )
 
-if (MINGW)
+if (WIN32 OR MINGW)
     target_link_libraries(enet winmm ws2_32)
 endif()
