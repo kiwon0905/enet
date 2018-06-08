@@ -1,10 +1,11 @@
-#define ENET_DLL
 /** 
  @file  enet.h
  @brief ENet public header file
 */
 #ifndef __ENET_ENET_H__
 #define __ENET_ENET_H__
+
+#define ENET_DLL
 
 #ifdef __cplusplus
 extern "C"
